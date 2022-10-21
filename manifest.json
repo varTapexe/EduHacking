@@ -1,0 +1,28 @@
+{
+	"name": "Edutyping Hack",
+	"version": "1.4",
+	"description": "Edutyping Hack",
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"https://www.edutyping.com/*",
+		"storage"
+	],
+	"icons": { 
+		"16": "eduhacking.png",
+        "48": "eduhacking.png",
+        "128": "eduhacking.png" }
+	,
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"web_accessible_resources": ["inject.js"],
+	"manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://www.edutyping.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ]
+}
