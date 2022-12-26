@@ -1,6 +1,6 @@
 {
   "name": "EduHacking",
-  "version": "1.10.7",
+  "version": "1.10.8",
   "description": "https://www.eduhacking.shop/",
   "permissions": [
     "webRequest",
